@@ -2,6 +2,7 @@
     <wb-module deploy-name="ODDS-ver0.00.002">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/test"/>
         <property name="context-root" value="ODDS-ver0.00.002"/>
         <property name="java-output-path" value="/ODDS-ver0.00.002/build/classes"/>
     </wb-module>
