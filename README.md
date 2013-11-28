@@ -10,7 +10,7 @@ O D D S
 Java7 (will certainly be migrated to Java8 after its release)
 <br>
 <b>Framework:</b>
-Struts2.3;
+Struts2.3; (with Spring DI plugin) -- might be ported to spring mvc/jsf if i get enough dev support -- 
 Hibernate4;
 EJB3.2
 <br>
