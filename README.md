@@ -22,51 +22,43 @@ JDK           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.7.0_25<br>
 JEE						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7<br>
 EJB						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.x<br>
 
-Framework
----------
+<b>Framework</b><br>
 Struts						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3.x<br>
 Spring-web-mvc	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				4.x<br>
 Spring-security	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				4.x<br>
 Spring-roo			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			4.x<br>
 
-ORM
----
+<b>ORM</b><br>
 Hibernate					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.x<br>
 JPA								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.x<br>
 
-Database
---------
+<b>Database</b><br>
 MySQL						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.5.x<br>
 mysql-connector					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.1.x<br>
 
-Js
---
+<b>Js</b><br>
 Jquery&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Latest<br>
 JQuery-AJAX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Latest<br>
 Jquery-Mobile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Latest<br>
 Angular.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Latest<br>
 
-Js-Server
----------
+<b>Js-Server</b><br>
 Node.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.10.x<br>
 Total.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.x<br>
 Angular.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Latest<br>
 
-View
-----
+<b>View</b><br>
 HTML						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5<br>
 Liferay					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		6.2<br>
 
-Templating
-----------
+<b>Templating</b><br>
 Jade&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Latest<br>
 Freemarker&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bundled&nbsp;with&nbsp;struts2<br>
 
-Scripting/Automation
---------------------
+<b>Scripting/Automation</b><br>
 Perl&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.10.x <br>
-Grunt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-Clojure&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Grunt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Latest<br>
+Clojure&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Latest<br>
 R&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.x<br>
 
 
@@ -77,10 +69,10 @@ Architechture Notes:
 All software choice should be <b>gratis libre</b><br>
 Java is the choice of coding since the same code can run on pretty much all the hardaware required.<br>
 All else is open to discussion and change <br>
-<b>Arch:</b>
+<b>Arch:</b><br>
 Java7&nbsp;(will&nbsp;certainly&nbsp;be&nbsp;migrated&nbsp;to&nbsp;Java8&nbsp;after&nbsp;its&nbsp;release)
 <br>
-<b>Framework:</b>
+<b>Framework:</b><br>
 Struts2.3;&nbsp;
 Spring&nbsp;MVC&nbsp;4.x&nbsp;--&nbsp;mostly&nbsp;for&nbsp;Spring&nbsp;Security;<br>
 //<i>I&nbsp;am&nbsp;using&nbsp;both&nbsp;the&nbsp;frameworks&nbsp;becuase&nbsp;Struts2&nbsp;is&nbsp;easier&nbsp;and&nbsp;more&nbsp;compatible&nbsp;with&nbsp;other&nbsp;frameworks.
@@ -88,9 +80,10 @@ Whereas,&nbsp;Spring&nbsp;MVC&nbsp;is&nbsp;more&nbsp;popular&nbsp;and&nbsp;provi
 <b>Database</b><br>
 I have chosen mysql, oracle is out due to licensing requirements, as I intend to use most of the work in java and not resorting to write procs and functions. They are great but documenting them is a pain and migrating to other databases is non-compatible mostly and that kicks our postgres. I like postgres, kinda, so the final production db server might be on the elephant (or mammoth?)
 <br>
-<b>Js-server</b>
+MongoDB should be used only as a temporary data store. Mysql should be used for permament persistence to harness its relational system.<br>
+<b>Js-server</b><br>
 Node.js&nbsp;--&nbsp;for&nbsp;the&nbsp;chat&nbsp;module. What can be achieved with Node should be done with Node instead of writing humungous lines of code in Spring/Struts<br>
-I decided against total.js and went ahead with express becuase total has only permanent member and he too keeps changing names (total; partial -- not his fault though). Things get a little confusing.<br>
+Total.js should be used instead of Express (wherever possible) for its excellent integration with Angular.js<br>
 I decided against using Backbone.js since it makes js code too much water tight and adds an extra layer of crap (considering i am not building a full blown js app)<br> 
 <b>Templating</b><br>
 I decided against tiles and other options just becuase of excellent inbuilt integration of freemarker with struts2.<br>
